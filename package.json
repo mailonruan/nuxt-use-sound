@@ -1,6 +1,6 @@
 {
   "name": "nuxt-use-sound",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "🔊 A Nuxt module for playing sound effects.",
   "keywords": [
     "nuxt",
@@ -27,7 +27,7 @@
     "build": "siroc build",
     "dev": "nuxt example",
     "lint": "eslint --ext .js,.ts,.vue .",
-    "release": "yarn build && yarn test && standard-version && git push --follow-tags && npm publish"
+    "release": "yarn build && standard-version && git push --follow-tags && npm publish"
   },
   "dependencies": {
     "@nuxtjs/composition-api": "^0.20.2",
