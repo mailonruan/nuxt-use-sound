@@ -19,7 +19,7 @@ const DEFAULTS: ModuleOptions = {}
 
 const CONFIG_KEY = 'sound'
 
-const nuxtModule: Module<ModuleOptions> = async function(moduleOptions) {
+const nuxtModule: Module<ModuleOptions> = async function (moduleOptions) {
   const options: ModuleOptions = defu(
     this.options[CONFIG_KEY]!,
     moduleOptions,
@@ -39,10 +39,10 @@ const nuxtModule: Module<ModuleOptions> = async function(moduleOptions) {
 
   this.nuxt.options.build.transpile.push('defu')
 
-  await this.addModule('@nuxtjs/composition-api')
+  await this.addModule('@nuxtjs/composition-api/module')
 }
 
-;(nuxtModule as any).meta = require('../package.json')
+  ; (nuxtModule as any).meta = require('../package.json')
 
 declare module '@nuxt/types' {
   interface NuxtConfig {
